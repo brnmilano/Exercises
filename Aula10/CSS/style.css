@@ -1,0 +1,18 @@
+body {
+  font: normal 25px Arial;
+}
+
+input {
+  font: normal 18px Arial;
+  width: 100px;
+}
+
+#area {
+  background: green;
+  color: white;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 22px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro Programa em JS!</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <h1>Olá, mundo!</h1>
+  <p>Já me livrei da maldição!</p>
+
+  <script>
+    var n1 = Number(window.prompt("Digite um número: ")); //Estou guardando o resultado do prompt que está aparecendo na janela.
+    var n2 = Number(window.prompt("Digite outro número: ")); //Tud o que estou digitando dentro do prompt está guardado pela variável n2.
+    var s = n1 + n2;
+    //window.alert("A soma dos valores é: " + String(s)); //Aqui fiz uma concatenação.
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //Aqui fiz um TEMPLATE STRING
+    // (number + number) para adição.
+    // (string + string) para concatenação.
+  </script>
+</body>
+
+</html>

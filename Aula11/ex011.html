@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sua naturalidade</title>
+</head>
+<body>
+  <h1>Verifique aqui sua naturalidade</h1>
+  De qual pais você é? <input type="text" name="txtnt" id="txtnt">
+  <input type="button" value="Verificar" onclick="verificar()">
+
+  <div class="resultado"></div>
+
+  <script>
+
+    function verificar() {
+      var txtnat = document.getElementById('txtnt')
+      var resultado = document.querySelector('div.resultado')
+      var pais = txtnat.value
+
+      resultado.innerHTML = `<p>A sua naturalidade é: </p>`
+
+        if (pais != 'Brasil') {
+          resultado.innerHTML += `Você é estrangeiro`
+        }else{
+          resultado.innerHTML += `Você é brasileiro`
+        }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos FOM</title>
+</head>
+
+<body>
+
+  <div id="area">
+    Interaja comigo!
+  </div>
+
+  <script>
+
+    var a = document.getElementById("area");
+
+    a.addEventListener('click', clicar);
+    a.addEventListener('mouseenter', entrar);
+    a.addEventListener("mouseout", sair);
+
+    function clicar() {
+      a.innerText = "Você clicou!"
+      a.style.background = "red"
+    }
+
+    function entrar() {
+      a.innerText = "Você entrou!"
+    }
+
+    function sair() {
+      a.innerText = "Você saiu!"
+      a.style.background = "green"
+    }
+
+  </script>
+</body>
+</html>
